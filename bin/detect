@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+echo the input is $1
+ls $1
 if [ -f $1/.buildpacks ]; then
   echo "Multipack"
   exit 0
