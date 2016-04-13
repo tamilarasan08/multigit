@@ -48,6 +48,7 @@ for BUILDPACK in $(cat $1/.buildpacks); do
 	echo "check 2"
     # we'll get errors later if these are needed and don't exist
     chmod -f +x $dir/bin/{detect,compile,release} || true
+echo "check 3"
 	$dir/bin/detect $1
     framework=$($dir/bin/detect $1)
     echo "framework is "$framework
