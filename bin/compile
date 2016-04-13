@@ -49,9 +49,6 @@ for BUILDPACK in $(cat $1/.buildpacks); do
     # we'll get errors later if these are needed and don't exist
     chmod -f +x $dir/bin/{detect,compile,release} || true
 echo "check 3"
-	echo $dir/bin/detect $1
-    framework=$($dir/bin/detect $1)
-    echo "framework is "$framework
 
     if [ $? == 0 ]; then
       echo "=====> Detected Framework: $framework"
