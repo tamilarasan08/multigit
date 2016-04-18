@@ -54,9 +54,9 @@ echo "check 3"
       echo "=====> Detected Framework: $framework"
       $dir/bin/compile $1 $2 $3
 
-      if [ $? != 0 ]; then
+      # if [ $? != 0 ]; then
        #  exit 1
-      fi
+      # fi
 
       # check if the buildpack left behind an environment for subsequent ones
       if [ -e $dir/export ]; then
