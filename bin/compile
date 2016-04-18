@@ -55,7 +55,7 @@ echo "check 3"
       $dir/bin/compile $1 $2 $3
 
       if [ $? != 0 ]; then
-        exit 1
+       #  exit 1
       fi
 
       # check if the buildpack left behind an environment for subsequent ones
